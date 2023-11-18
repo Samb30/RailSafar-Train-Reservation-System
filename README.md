@@ -55,4 +55,10 @@ In the Users Module, users can:
 - MySQL
 - JavaScript
 
+**Screenshots of the website - 
+
+1. Landing Page
+![image](https://github.com/Samb30/RailSafar-Train-Reservation-System/assets/117346153/e2f3fc9f-f824-47cf-abc0-6e2c7e11d3dc)
+
+
 Railsafar is designed to offer a seamless and secure train reservation experience, blending user-friendly features.
