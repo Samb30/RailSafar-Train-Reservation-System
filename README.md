@@ -44,6 +44,7 @@ In the Users Module, users can:
 - Update their profiles
 
 **Technologies Used:**
+
 *Front-End Development:*
 - HTML
 - CSS
@@ -54,4 +55,4 @@ In the Users Module, users can:
 - MySQL
 - JavaScript
 
-Railsafar is designed to offer a seamless and secure train reservation experience, blending user-friendly features with cutting-edge technologies for a journey that's as enjoyable as the destination.
+Railsafar is designed to offer a seamless and secure train reservation experience, blending user-friendly features.
