@@ -1,0 +1,98 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding-left: 11%;
+    background-color: #ffffff;
+    padding-right: 11%;
+    box-shadow: 0 0px 10px #535353;
+  }
+
+  /* Style for the logo */
+  .logo img {
+    margin-top: 20px;
+    width: 80px;
+    scale: 1.5;
+  }
+
+  /* Style for the right side of the navigation bar */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Style for the navigation links */
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  .user-profile {
+    margin-right: 0px !important;
+  }
+
+  .nav-links li {
+    margin-right: 40px;
+    display: inline;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    position: relative;
+  }
+
+  .nav-links a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+  }
+
+  .nav-links a:hover::before {
+    width: 100%;
+  }
+
+
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Style for the profile button */
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #878787;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Style for dropdown items */
+  .dropdown-content1 a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #000000;
+  }
+
+  /* Change color on hover */
+  .dropdown-content1 a:hover {
+    background-color: #ddd;
+  }
+  .dropdown img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .dropdown img:hover {
+    cursor: pointer;
+  }

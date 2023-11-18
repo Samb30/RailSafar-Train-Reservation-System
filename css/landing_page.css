@@ -1,0 +1,276 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-image: url(trian2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+}
+
+nav {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  height: 11%;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  scale: 2;
+}
+
+.nav-links {
+  list-style: none;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.nav-links li {
+  font-family: "Montserrat", sans-serif;
+  display: inline;
+  margin-left: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  position: relative;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  font-weight: bolder;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+  font-weight: bolder;
+}
+
+.main {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 89%;
+  top: 11%;
+}
+
+.centered-container {
+  width: 80%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+.centered-container {
+  width: 70%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70%;
+}
+
+.centered-container > div {
+  width: 100%;
+}
+
+.text {
+  box-sizing: content-box;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+}
+.maintext {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: rgba(255, 255, 255, 0.937);
+  display: flex;
+}
+.words {
+  height: 50px;
+  padding-left: 5px;
+  overflow: hidden;
+  
+}
+
+.words span {
+  display: block;
+  font-size: 40px;
+  height: 100%;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: white;
+  animation: spin_words 8s infinite;
+}
+
+@keyframes spin_words {
+  12.5% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  37.5% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  62.5% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  87.5% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+.normaltext {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  font-size: 17px;
+  font-weight:bold;
+  color: rgba(255, 255, 255, 0.716);
+}
+.search-box {
+  flex: 1;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.child {
+  flex: 1; /* Each child takes up an equal amount of space */
+  height: 70px; /* Set the height as needed */
+  display: flex; /* Adjust margin for spacing between child divs */
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Takes 10% width */
+  background-color: rgba(255, 255, 255, 0.493); /* Add styling as desired */
+}
+.right2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2; /* Takes 10% width */
+  background-color: rgba(255, 255, 255, 0.493); /* Add styling as desired */
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 7; /* Takes the remaining 90% width */
+  background-color: rgba(255, 255, 255, 0.493); /* Add styling as desired */
+  /* Adjust margin for spacing between child divs */
+}
+input[type="text"]:focus {
+  outline: none;
+  background-color: transparent;
+}
+input[type="text"] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  caret-color: black;
+  color: black !important;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+input[type="date"] {
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.firstchild {
+  border-radius: 20px 0 0 20px;
+}
+.lastchild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color:white;
+  background: linear-gradient(to right, rgb(251, 201, 1), #c49102);
+  border-radius: 0px 20px 20px 0px;
+}
+.hoverdropdown:hover,
+.lastchild:hover {
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: #000000; /* Specify your desired color */
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+    max-height: 300px; /* Set the maximum height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the max height */
+}
+
+/* Style each station name item */
+.dropdown-content a {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: black;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+/* Add hover effect for each item */
+.dropdown-content a:hover {
+    background-color: #ccc;
+}

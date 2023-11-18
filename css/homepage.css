@@ -1,0 +1,114 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+  }
+  
+  .search-box {
+    flex: 1;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .child {
+    flex: 1; /* Each child takes up an equal amount of space */
+    height: 70px; /* Set the height as needed */
+    display: flex; /* Adjust margin for spacing between child divs */
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Takes 10% width */
+    background-color: rgb(255, 255, 255); /* Add styling as desired */
+  }
+  .right2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2; /* Takes 10% width */
+    background-color: rgb(255, 255, 255); /* Add styling as desired */
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 7; /* Takes the remaining 90% width */
+    background-color: rgb(255, 255, 255); /* Add styling as desired */
+    /* Adjust margin for spacing between child divs */
+  }
+  input[type="text"]:focus {
+    outline: none;
+    background-color: transparent;
+  }
+  input[type="text"] {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    caret-color: black;
+    color: black !important;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  input[type="date"] {
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+  }
+  .firstchild {
+    border-radius: 10px 0 0 10px;
+  }
+  .lastchild {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #0055b8;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .hoverdropdown:hover,
+  .lastchild:hover {
+    cursor: pointer;
+  }
+  
+  input::placeholder {
+    color: #000000; /* Specify your desired color */
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      flex-direction: column;
+      max-height: 300px; /* Set the maximum height for scrolling */
+      overflow-y: auto; /* Enable vertical scrolling if content exceeds the max height */
+  }
+  
+  /* Style each station name item */
+  .dropdown-content a {
+      text-decoration: none;
+      padding: 8px 16px;
+      color: black;
+      display: block;
+      transition: background-color 0.3s;
+  }
+  
+  /* Add hover effect for each item */
+  .dropdown-content a:hover {
+      background-color: #ccc;
+  }
